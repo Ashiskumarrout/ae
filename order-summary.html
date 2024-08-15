@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6878467af.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="Ecmerse photos/smalllogo.png" alt=""  class=" logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shope.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a></li>
+                <li id=""><a href="akas.php"> logion<i class="fa-solid fa-user-circle"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-circle-xmark" style="color: #19191a;"></i></a>
+            </ul>
+        </div>
+        
+    <div id="mobile">
+       
+        <a href="cart.html"><i class="fa-solid fa-cart-plus"></i></a>
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+     </section>
+
+    <section id="order-summary" class="section-p1">
+        <h2>Order Summary</h2>
+        <form id="order-form" action="process-order.php" method="POST">
+            <h3>Delivery Address</h3>
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+            
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+            
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="house-no">House No:</label>
+            <input type="text" id="house-no" name="house-no" required>
+            
+            <label for="building-name">Building Name:</label>
+            <input type="text" id="building-name" name="building-name" required>
+            
+            <label for="road">Road/Area:</label>
+            <input type="text" id="road" name="road" required>
+            
+            <label for="colony">Colony:</label>
+            <input type="text" id="colony" name="colony" required>
+
+            <h3>Payment Options</h3>
+            <input type="radio" id="cash-on-delivery" name="payment" value="cash-on-delivery" checked>
+            <label for="cash-on-delivery">Cash on Delivery</label>
+            <br>
+            <input type="radio" id="card-payment" name="payment" value="card-payment">
+            <label for="card-payment">Card Payment</label>
+            <br>
+           
+            <br>
+            <button type="submit" class="normal">Place Order</button>
+        </form>
+    </section>
+        <!-- --------------------------------newslater--------------------------- -->
+        <section id="newsletter"  class="section-p1">
+            <div class="newstext">
+                <h4>Sign up for newsletter</h4>
+                <p>Get E-mail updets your leters shop and <span> sepecial offer</span></p>
+            </div>
+        <div class="form">
+            <input type="text" placeholder="your E-mail addres">
+            <button class="normal">sign up</button>
+        </div>
+        
+        </section>
+        <!-- ----------------------------footer------------- -->
+       
+</body>
+</html>
+
